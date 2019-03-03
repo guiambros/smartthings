@@ -34,7 +34,7 @@
  *
  */ 
 definition(
-    name: "Sonos talking messages - child scheduler",
+    name: "Sonos talking messages scheduler",
     namespace: "wrgms",
     author: "Michael Struck",
     description: "Child app (DO NOT PUBLISH!) to control various waking schedules using a SmartThings connected speaker as an alarm.",
