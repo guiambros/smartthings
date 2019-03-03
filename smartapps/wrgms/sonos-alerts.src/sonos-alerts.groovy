@@ -2,7 +2,7 @@
  *  Talking Alarm Clock-Parent
  *
  *  Copyright © 2016 Michael Struck
- *  Version 2.2.5 4/21/16
+ *  Version 2.2.6 3/2/2019 by Gui Ambros
  * 
  *  Version 2.0.0 - Initial release of parent/client app. 1.4.5 was released to SmartThings production
  *  Version 2.0.1 - Changed the default of new schedules to 'enabled'
@@ -16,6 +16,7 @@
  *  Version 2.2.3 - Minor syntax updates
  *  Version 2.2.4 - Minor syntax change to support triggers for the alarm
  *  Version 2.2.5 - Minor GUI changes to accomodate new mobile app structure
+ *  Version 2.2.6 - Change name, icons and changing to my personal github repo
  *
  *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  *  in compliance with the License. You may obtain a copy of the License at:
@@ -29,7 +30,7 @@
  */
 
 definition(
-    name: "Sonos talking messages",
+    name: "Sonos alerts",
     singleInstance: true,
     namespace: "wrgms",
     author: "Michael Struck",
@@ -48,22 +49,22 @@ preferences {
 }
 //Show main page
 def mainPage() {
-    dynamicPage(name: "mainPage", title: "Talking Alarm Clock Schedules", install: true, uninstall: false) {
+    dynamicPage(name: "mainPage", title: "Sonos talking messages", install: true, uninstall: false) {
         section {
-            app(name: "childSchedules", appName: "Talking Alarm Clock-Schedule", namespace: "MichaelStruck", title: "Create New Alarm Schedule...", multiple: true, 
-                image: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/img/add.png")
+            app(name: "childSchedules", appName: "Sonos alerts scheduler", namespace: "wrgms", title: "Create New Alarm Schedule...", multiple: true, 
+                image: "https://raw.githubusercontent.com/guiambros/smartthings/master/img/add.png")
         }
         section([title:"Options", mobileOnly:true]) {
-            href "pageSummary", title: "View/Configure Alarm Summaries", description: none, image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/settings.png"
+            href "pageSummary", title: "View/Configure Alarm Summaries", description: none, image: "https://raw.githubusercontent.com/guiambros/smartthings/master/img/settings.png"
             href "pageAbout", title: "About ${textAppName()}", description: "Tap to get application version, license, instructions or to remove the application",
-                image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/img/info.png"
+                image: "https://raw.githubusercontent.com/guiambros/smartthings/master/img/info.png"
         }
     }
 }
 def pageAbout(){
     dynamicPage(name: "pageAbout", uninstall: true) {
         section {
-            paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png"
+            paragraph "${textAppName()}\n${textCopyright()}", image: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/voice120x120.png"
         }
         section ("SmartApp Versions") {
             paragraph textVersion()
@@ -157,7 +158,7 @@ def summaryHandler(evt){
 }
 //Version/Copyright/Information/Help
 private def textAppName() {
-    def text = "Talking Alarm Clock"
+    def text = "Sonos alerts"
 }   
 private def textVersion() {
     def version = "Parent App Version: 2.2.5 (04/21/2016)"
