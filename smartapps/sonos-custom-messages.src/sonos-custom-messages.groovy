@@ -27,14 +27,14 @@
  */
 
 definition(
-    name: "Talking Alarm Clock",
+    name: "Talking messages via Sonos",
     namespace: "MichaelStruck",
     author: "Michael Struck",
-    description: "Control up to 4 waking schedules using a Sonos speaker as an alarm.",
+    description: "Speak custom messages using a Sonos speaker.",
     category: "Convenience",
-    iconUrl: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock.png",
-    iconX2Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png",
-    iconX3Url: "https://raw.githubusercontent.com/MichaelStruck/SmartThings/master/Other-SmartApps/Talking-Alarm-Clock/Talkingclock@2x.png",
+    iconUrl: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/voice60x60.png",
+    iconX2Url: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/voice120x120.png",
+    iconX3Url: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/voice120x120.png",
     pausable: true
 )
 
