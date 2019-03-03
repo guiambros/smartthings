@@ -36,9 +36,9 @@ definition(
     author: "Michael Struck",
     description: "Speak custom messages using a Sonos speaker.",
     category: "Convenience",
-    iconUrl: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/voice60x60.png",
-    iconX2Url: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/voice120x120.png",
-    iconX3Url: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/voice120x120.png",
+    iconUrl: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/img/voice60x60.png",
+    iconX2Url: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/img/voice120x120.png",
+    iconX3Url: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/img/voice120x120.png",
     pausable: true
 )
 
