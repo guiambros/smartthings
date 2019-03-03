@@ -27,8 +27,8 @@
  */
 
 definition(
-    name: "Talking messages via Sonos",
-    namespace: "MichaelStruck",
+    name: "Sonos talking messages",
+    namespace: "wrgms",
     author: "Michael Struck",
     description: "Speak custom messages using a Sonos speaker.",
     category: "Convenience",

@@ -35,11 +35,11 @@
  */ 
 definition(
     name: "Sonos Custom Message",
-    namespace: "MichaelStruck",
+    namespace: "wrgms",
     author: "Michael Struck",
     description: "Child app (do not publish) to control various waking schedules using a SmartThings connected speaker as an alarm.",
     category: "Convenience",
-    parent: "MichaelStruck:Sonos Custom Message",
+    parent: "wrgms:Sonos talking messages",
     iconUrl: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/voice60x60.png",
     iconX2Url: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/voice120x120.png",
     iconX3Url: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/voice120x120.png"
