@@ -52,12 +52,12 @@ def mainPage() {
     dynamicPage(name: "mainPage", title: "Sonos talking messages", install: true, uninstall: false) {
         section {
             app(name: "childSchedules", appName: "Sonos alerts scheduler", namespace: "wrgms", title: "Create New Alarm Schedule...", multiple: true, 
-                image: "https://raw.githubusercontent.com/guiambros/smartthings/master/img/add.png")
+                image: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/img/add.png")
         }
         section([title:"Options", mobileOnly:true]) {
-            href "pageSummary", title: "View/Configure Alarm Summaries", description: none, image: "https://raw.githubusercontent.com/guiambros/smartthings/master/img/settings.png"
+            href "pageSummary", title: "View/Configure Alarm Summaries", description: none, image: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/img/settings.png"
             href "pageAbout", title: "About ${textAppName()}", description: "Tap to get application version, license, instructions or to remove the application",
-                image: "https://raw.githubusercontent.com/guiambros/smartthings/master/img/info.png"
+                image: "https://raw.githubusercontent.com/guiambros/smartthings/master/media/img/info.png"
         }
     }
 }
