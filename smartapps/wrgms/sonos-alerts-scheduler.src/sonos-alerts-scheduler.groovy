@@ -80,7 +80,7 @@ def pageSetup() {
         	section ("Alarm sound options"){
 				input "soundAlarm", "enum", title: "Play This Sound...", required:false, multiple: false, 
                 	options: [[1:"Alien-8 seconds"],[2:"Bell-12 seconds"], [3:"Buzzer-20 seconds"], 
-                    [4:"Fire-20 seconds"], [5:"Rooster-2 seconds"], [6:"Siren-20 seconds"],[6:"Pacman-Checkmail-22 seconds"], [8:"Custom-User Defined"]], submitOnChange:true
+                    [4:"Fire-20 seconds"], [5:"Rooster-2 seconds"], [6:"Siren-20 seconds"],[7:"Pacman-Checkmail-22 seconds"], [8:"Custom-User Defined"]], submitOnChange:true
 				if (soundAlarm){
                 	if (soundAlarm == "8") input "alarmCustom", "text", title:"URL/Location Of Custom Sound...", required: false
                     input "soundLength", "number", title: "Maximum time to play sound (empty=use sound default)", description: "1-22", required: false
